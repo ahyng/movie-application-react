@@ -6,7 +6,6 @@ const api_key = process.env.REACT_APP_MOVIE_API_KEY;
 const DetailPage = () => {
     const id = useParams().id;
     const [detail, setDetail] = useState({});
-    const [genres, setGenres] = useState([]);
 
     useEffect(() => {
         const fetchDetails = async () => {
@@ -18,8 +17,6 @@ const DetailPage = () => {
     }, [id])
     console.log(detail);
 
-    console.log(detail.homepage)
-
     return (
         <div>
             <img src={`https://image.tmdb.org/t/p/w300${detail.poster_path}`}/>
@@ -28,6 +25,13 @@ const DetailPage = () => {
             <p>{detail ? detail.vote_average : ''}</p>
             <p>{detail ? detail.overview : ''}</p>
             <a href={`${detail.homepage}`} target="_blank">상세보기</a>
+            {detail && detail.genres && (
+                <div>
+                    {detail.genres.map((item) => (
+                        <span key={item.id}>{item.name} </span>
+                    ))}
+                </div>
+            )}
         </div>
     )
 }
