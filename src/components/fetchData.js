@@ -10,9 +10,9 @@ const fetchData = async () => {
   const movieList = response.data.results.map((data, index) => {
     let img_src = `https://image.tmdb.org/t/p/w300${data.poster_path}`
      return (
-     <li className='items' key={index}>{data.title}<br/>
-      {data.release_date}<br/>
-      <img src={img_src}/>
+     <li className='items' key={index}>
+     <img src={img_src}/>
+     <p className='title'>{data.title}</p>
      </li>
      )
   })
