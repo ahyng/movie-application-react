@@ -2,6 +2,7 @@ import React from 'react';
 import MovieList from './components/MovieList';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import DetailPage from './components/DetailPage';
+import './components/styles/MovieList.scss'
 
 function App() {
   

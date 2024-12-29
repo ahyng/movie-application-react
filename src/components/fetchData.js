@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const api_key = process.env.REACT_APP_MOVIE_API_KEY;
 
 const fetchData = async () => {
-  const url = `https://api.themoviedb.org/3/movie/now_playing?api_key=${api_key}`
+  const url = `https://api.themoviedb.org/3/movie/now_playing?api_key=${api_key}&language=ko-KR`
   const response = await axios.get(url);
   
   const movieList = response.data.results.map((data, index) => {

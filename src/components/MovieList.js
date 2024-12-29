@@ -14,7 +14,10 @@ const MovieList = () => {
   }, []);
 
   return (
-    <div className="MovieList">{movieList || <p>Loading...</p>}</div>
+    <div>
+      <header>Movie List</header>
+      <div className="MovieList">{movieList || <p>Loading...</p>}</div>
+    </div>
   )
 }
 
