@@ -21,8 +21,8 @@ const DetailPage = () => {
 
     return (
         <div className="detailPage">
-            {/* <img className="backgroundImage" src={`https://image.tmdb.org/t/p/w300${detail.backdrop_path}`}/> */}
-            <header>Detail Page</header>
+            <img className="backgroundImage" src={`https://image.tmdb.org/t/p/w300${detail.backdrop_path}`}/>
+            <header>Details</header>
             <div className="detailBox">
                 <div>
                     <img src={`https://image.tmdb.org/t/p/w500${detail.poster_path}`}/>
@@ -30,9 +30,10 @@ const DetailPage = () => {
                 <div className="description">
                     <h2 className="detailTitle">{detail ? detail.title : ''}</h2>
                     <p className="tagLine">{(detail && detail.tagline !== "") ? `\"${detail.tagline}\"` : null}</p>
+                    <hr />
                     <p className="runTime">상영시간 : {detail ? detail.runtime : ''}분</p>
                     <p className="releaseDate">개봉일 : {detail ? detail.release_date : ''}</p>
-                    <p className="rate">평점 : {detail ? detail.vote_average : ''}</p>
+                    <p className="rate">⭐ {detail ? detail.vote_average : ''}</p>
                     <p className="overView">{detail ? detail.overview : ''}</p>
                     {/* <a href={`${detail.homepage}`} target="_blank">상세보기</a> */}
                     {detail && detail.genres && (
