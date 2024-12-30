@@ -13,7 +13,7 @@ const fetchData = async () => {
      <Link to={`/${data.id}`} className='items' key={index}>
      <img src={img_src}/>
      <p className='title'>{data.title}</p>
-     <span>⭐ {data.vote_average}</span>
+     <span className='voteAverage'>⭐ {data.vote_average}</span>
      </Link>
      )
   })
