@@ -22,12 +22,10 @@ const DetailPage = () => {
     console.log(detail);
 
     return (
-        <div className="detailPage">
+        <div className="detailPage" style={{backgroundImage : `url(https://image.tmdb.org/t/p/w300${detail.backdrop_path})`}}>
+            <header>Details</header>
             { detail ?
             <div>
-                <img className="backgroundImage" src={`https://image.tmdb.org/t/p/w300${detail.backdrop_path}`}/>
-                <header>Details</header>
-                
                 <div className="detailBox">
                 
                     <div>
