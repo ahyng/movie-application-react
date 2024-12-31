@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import YouTube from "react-youtube";
 import ReactPlayer from 'react-player'
 import './styles/video.scss'
 
