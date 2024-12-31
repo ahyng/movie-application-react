@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import DetailPage from './components/DetailPage';
 import './components/styles/MovieList.scss'
 import MainPage from './components/MainPage';
