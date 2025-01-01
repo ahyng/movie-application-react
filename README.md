@@ -22,10 +22,14 @@
 - gh-pages
 
 ### 실행 화면
-  
-![main_page](https://github.com/user-attachments/assets/4fefa699-1f24-4390-8d2c-e25ce651ad34)
 
-![detail_page](https://github.com/user-attachments/assets/b166e98b-f9f0-44db-946e-ddd4aed2782b)
+메인 페이지
+![main_page](https://github.com/user-attachments/assets/8115f0bb-8d24-4298-9062-2aca561e43da)
+
+
+상세 페이지
+![detail_page](https://github.com/user-attachments/assets/3093c23f-830d-4ec0-9a30-8a28992b27b8)
+
 
 [웹사이트 바로가기](https://ahyng.github.io/movie-application-react/)
 
