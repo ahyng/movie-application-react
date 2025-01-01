@@ -29,7 +29,6 @@ const DetailPage = () => {
                 <div className="detailBox">
                 
                     <div>
-                        {/* <img src={`https://image.tmdb.org/t/p/w500${detail.poster_path}`}/> */}
                         <Videos id={detail ? detail.id : 'loading'} poster_path={detail.poster_path} />   
                     </div>
                     

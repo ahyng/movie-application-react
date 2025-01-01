@@ -7,6 +7,16 @@
     padding: 0;
 }
 
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
 
 .detailBox {
     backdrop-filter:  blur(10px) brightness(0.6); 
@@ -15,7 +25,7 @@
     padding: 50px;
     display: flex;
     color: black;
-    background-color: rgba(255, 255, 255, 0.746);
+    background-color: rgba(255, 255, 255, 0.793);
 }
 
 img {
@@ -29,6 +39,12 @@ img {
 .detailTitle {
     font-size: 40px;
     font-weight: bolder;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: gray;
 }
 
 .tagLine {

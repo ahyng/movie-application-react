@@ -41,11 +41,12 @@ const Videos = (params) => {
                 <ReactPlayer 
                     className="video" 
                     url={'https://www.youtube.com/watch?v=' + videos.results[videos.results.length-1].key} 
-                    width={'50vw'}
-                    height={'60vh'}
+                    width={'55vw'}
+                    height={'70vh'}
                     playing={true}
                     muted={true}
                     onError={checkError}
+                    loop={true}
                 />
             : <img src={`https://image.tmdb.org/t/p/w500/${params.poster_path}`}/>}
         </div>
