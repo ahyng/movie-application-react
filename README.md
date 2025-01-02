@@ -34,7 +34,7 @@
 
 
 #### 상세 페이지
-![detail_page](https://github.com/user-attachments/assets/3093c23f-830d-4ec0-9a30-8a28992b27b8)
+![detail_page](https://github.com/user-attachments/assets/29d99de6-384a-44a5-a08a-87ebedae9f19)
 
 
 [웹사이트 바로가기](https://ahyng.github.io/movie-application-react/)
