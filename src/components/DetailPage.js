@@ -22,7 +22,7 @@ const DetailPage = () => {
     console.log(detail);
 
     return (
-        <div className="detailPage" style={{backgroundImage : `url(https://image.tmdb.org/t/p/w300${detail.backdrop_path})`}}>
+        <div className="detailPage">
             <header>Details</header>
             { detail ?
             <div>

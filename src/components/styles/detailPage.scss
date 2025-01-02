@@ -1,10 +1,7 @@
 .detailPage {
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
     margin: 0;
     padding: 0;
+    background-color: rgba(255, 255, 255, 0.793);
 }
 
 header {
@@ -19,13 +16,13 @@ header {
 
 
 .detailBox {
-    backdrop-filter:  blur(10px) brightness(0.6); 
-    flex: 1;
     height: 85vh;
-    padding: 50px;
-    display: flex;
+    padding: 20px;
     color: black;
-    background-color: rgba(255, 255, 255, 0.793);
+    @media (min-width: 769px) { 
+        display: flex;
+        padding: 50px;
+    }
 }
 
 img {

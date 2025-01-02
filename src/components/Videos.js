@@ -8,6 +8,7 @@ const api_key = process.env.REACT_APP_MOVIE_API_KEY;
 const Videos = (params) => {
 
     const [videos, setVideos] = useState({});
+    const [videoSize, setVideoSize] = useState(['55vw', '70vh']);
 
     useEffect(() => {
         const fetchDetails = async () => {
@@ -34,6 +35,11 @@ const Videos = (params) => {
         console.log('playable : ', playable);
     }
     
+    useEffect(()=> {
+        if (window.innerWidth <= 768) {
+            setVideoSize(['85vw', '40vh']);
+        }
+    })
     
     return (
         <div>
@@ -41,8 +47,8 @@ const Videos = (params) => {
                 <ReactPlayer 
                     className="video" 
                     url={'https://www.youtube.com/watch?v=' + videos.results[videos.results.length-1].key} 
-                    width={'55vw'}
-                    height={'70vh'}
+                    width={videoSize[0]}
+                    height={videoSize[1]}
                     playing={true}
                     muted={true}
                     onError={checkError}
