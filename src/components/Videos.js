@@ -36,7 +36,7 @@ const Videos = (params) => {
     }
     
     useEffect(()=> {
-        if (window.innerWidth <= 768) {
+        if (window.innerWidth <= 900) {
             setVideoSize(['85vw', '40vh']);
         }
     })
